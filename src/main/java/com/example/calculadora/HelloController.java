@@ -1,6 +1,7 @@
 package com.example.calculadora;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 
 public class HelloController {
@@ -12,6 +13,44 @@ public class HelloController {
 
     @FXML
     private TextArea pantalla;
+    @FXML
+    private Button bt3;
+    @FXML
+    private Button btResto;
+    @FXML
+    private Button bt2;
+    @FXML
+    private Button bt5;
+    @FXML
+    private Button bt4;
+    @FXML
+    private Button bt7;
+    @FXML
+    private Button bt6;
+    @FXML
+    private Button bt9;
+    @FXML
+    private Button btBorrar;
+    @FXML
+    private Button bt8;
+    @FXML
+    private Button btBorrarTodo;
+    @FXML
+    private Button btSuma;
+    @FXML
+    private Button btMulti;
+    @FXML
+    private Button btComa;
+    @FXML
+    private Button btResta;
+    @FXML
+    private Button btDivi;
+    @FXML
+    private Button btIgual;
+    @FXML
+    private Button bt1;
+    @FXML
+    private Button bt0;
 
     public void asignaciones(String num){
         if (op==-1){

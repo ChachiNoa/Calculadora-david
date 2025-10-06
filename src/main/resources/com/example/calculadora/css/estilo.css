@@ -1,0 +1,42 @@
+.button{
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0, 1, 1);
+}
+
+.BTacciones{
+    -fx-background-color: #f9f9f9;
+}
+
+.BTnums{
+    -fx-background-color: white;
+}
+
+#btIgual{
+    -fx-background-color:  #005a9e;
+    -fx-text-fill: white;
+}
+
+.BTacciones:hover{
+    -fx-background-color: #dadada;
+}
+
+.BTnums:hover{
+    -fx-background-color: #dadada;
+}
+
+#btIgual:hover{
+    -fx-background-color: #014e87;
+    -fx-text-fill: white;
+}
+
+#pantalla .content{
+    -fx-background-color:  #f3f3f3;
+}
+
+.text-field {
+    -fx-background-color: #f3f3f3;
+}
+
+.text-field:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}

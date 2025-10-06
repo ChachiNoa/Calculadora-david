@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="590.0" prefWidth="375.0" spacing="20.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculadora.HelloController">
+<VBox alignment="CENTER" prefHeight="590.0" prefWidth="375.0" spacing="20.0" style="-fx-background-color: #f3f3f3;" stylesheets="@css/estilo.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculadora.HelloController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        <Insets bottom="8.0" left="5.0" right="5.0" top="8.0" />
     </padding>
    <children>
       <GridPane alignment="CENTER" VBox.vgrow="ALWAYS">
@@ -30,214 +30,214 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <TextArea fx:id="pantalla" editable="false" prefHeight="129.0" prefWidth="0.0" GridPane.columnSpan="4">
+            <TextArea fx:id="pantalla" editable="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="97.0" prefWidth="358.0" style="-fx-background-color: #f3f3f3;" text="0" GridPane.columnSpan="4">
                <font>
-                  <Font size="30.0" />
+                  <Font name="Calibri Bold" size="45.0" />
                </font></TextArea>
-            <Button fx:id="btBorrarTodo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#BotonBorrarTodo" prefHeight="81.0" prefWidth="83.0" text="C" textFill="#fa7605" GridPane.rowIndex="1">
+            <Button fx:id="btBorrarTodo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#BotonBorrarTodo" prefHeight="81.0" prefWidth="83.0" styleClass="BTacciones" text="C" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button fx:id="btBorrar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#BotonBorra" prefHeight="81.0" prefWidth="83.0" text="&lt;-" textFill="#fa7605" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button fx:id="btBorrar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#BotonBorra" prefHeight="81.0" prefWidth="83.0" styleClass="BTacciones" text="&lt;-" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button fx:id="btResto" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#BotonResto" prefHeight="81.0" prefWidth="83.0" text="\%" textFill="#fa7605" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Button fx:id="btResto" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#BotonResto" prefHeight="81.0" prefWidth="83.0" styleClass="BTacciones" text="\%" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button fx:id="btDivi" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#BotonDivi" prefHeight="81.0" prefWidth="83.0" text="/" textFill="#fa7605" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <Button fx:id="btDivi" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#BotonDivi" prefHeight="81.0" prefWidth="83.0" styleClass="BTacciones" text="/" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button fx:id="bt7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#Boton7" prefHeight="81.0" prefWidth="83.0" text="7" GridPane.rowIndex="2">
+            <Button fx:id="bt7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#Boton7" prefHeight="81.0" prefWidth="83.0" styleClass="BTnums" text="7" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button fx:id="bt8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#Boton8" prefHeight="81.0" prefWidth="83.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button fx:id="bt8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#Boton8" prefHeight="81.0" prefWidth="83.0" styleClass="BTnums" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button fx:id="bt9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#Boton9" prefHeight="81.0" prefWidth="83.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <Button fx:id="bt9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#Boton9" prefHeight="81.0" prefWidth="83.0" styleClass="BTnums" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button fx:id="btMulti" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#BotonMulti" prefHeight="81.0" prefWidth="83.0" text="x" textFill="#fa7605" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <Button fx:id="btMulti" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#BotonMulti" prefHeight="81.0" prefWidth="83.0" styleClass="BTacciones" text="x" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button fx:id="bt4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#Boton4" prefHeight="81.0" prefWidth="83.0" text="4" GridPane.rowIndex="3">
+            <Button fx:id="bt4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#Boton4" prefHeight="81.0" prefWidth="83.0" styleClass="BTnums" text="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button fx:id="bt5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#Boton5" prefHeight="81.0" prefWidth="83.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Button fx:id="bt5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#Boton5" prefHeight="81.0" prefWidth="83.0" styleClass="BTnums" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button fx:id="bt6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#Boton6" prefHeight="81.0" prefWidth="83.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <Button fx:id="bt6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#Boton6" prefHeight="81.0" prefWidth="83.0" styleClass="BTnums" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button fx:id="btResta" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#BotonResta" prefHeight="81.0" prefWidth="83.0" text="-" textFill="#fa7605" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <Button fx:id="btResta" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#BotonResta" prefHeight="81.0" prefWidth="83.0" styleClass="BTacciones" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button fx:id="bt1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#Boton1" prefHeight="81.0" prefWidth="83.0" text="1" GridPane.rowIndex="4">
+            <Button fx:id="bt1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#Boton1" prefHeight="81.0" prefWidth="83.0" styleClass="BTnums" text="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button fx:id="bt2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#Boton2" prefHeight="81.0" prefWidth="83.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <Button fx:id="bt2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#Boton2" prefHeight="81.0" prefWidth="83.0" styleClass="BTnums" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button fx:id="bt3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#Boton3" prefHeight="81.0" prefWidth="83.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4">
+            <Button fx:id="bt3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#Boton3" prefHeight="81.0" prefWidth="83.0" styleClass="BTnums" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button fx:id="btSuma" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#BotonSuma" prefHeight="81.0" prefWidth="83.0" text="+" textFill="#fa7605" GridPane.columnIndex="3" GridPane.rowIndex="4">
+            <Button fx:id="btSuma" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#BotonSuma" prefHeight="81.0" prefWidth="83.0" styleClass="BTacciones" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button fx:id="bt0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#Boton0" prefHeight="81.0" prefWidth="83.0" text="0" GridPane.columnSpan="2" GridPane.rowIndex="5">
+            <Button fx:id="bt0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#Boton0" prefHeight="81.0" prefWidth="83.0" styleClass="BTnums" text="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button fx:id="btComa" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#BotonComa" prefHeight="81.0" prefWidth="83.0" text="," GridPane.columnIndex="2" GridPane.rowIndex="5">
+            <Button fx:id="btComa" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#BotonComa" prefHeight="81.0" prefWidth="83.0" styleClass="BTnums" text="," GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button fx:id="btIgual" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#BotonIgual" prefHeight="81.0" prefWidth="83.0" style="-fx-background-color: #fa7605;" text="=" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="5">
+            <Button fx:id="btIgual" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#BotonIgual" prefHeight="81.0" prefWidth="83.0" text="=" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
                <GridPane.margin>
-                  <Insets top="10.0" />
+                  <Insets left="2.5" right="2.5" top="10.0" />
                </GridPane.margin>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
